@@ -4,12 +4,11 @@ import { routes } from "./routes/routes";
 import cors from "cors"
 import cookieParser from "cookie-parser"
 import authGuard from "./middlewares/authGuard";
-import { config } from "./config";
 
 const app = express();
 
 const corsOptions = {
-    origin: config.FRONTED_URL,
+    origin: "*",
     credentials: true,
     // methods: ['GET', 'POST', 'PUT', 'DELETE'],
     // allowedHeaders: ['Content-Type', 'Authorization'],
