@@ -9,7 +9,7 @@ import { config } from "./config";
 const app = express();
 
 const corsOptions = {
-    origin: "*",
+    origin: config.FRONTED_URL,
     credentials: true,
     // methods: ['GET', 'POST', 'PUT', 'DELETE'],
     // allowedHeaders: ['Content-Type', 'Authorization'],
